@@ -1,17 +1,22 @@
 # 302 Waterways offline charts
 
 The chart packs behind **Offline maps** in the 302 Waterways app (Plus): NOAA's current nautical
-chart for each bay, sound and tidal river the app covers, Maine to Texas, one
-[MBTiles](https://github.com/mapbox/mbtiles-spec) file per water, so the map still has the chart,
-its depths and its channel markers with no signal.
+chart for the whole coast, Maine to Texas, and the Great Lakes, in regions, one
+[MBTiles](https://github.com/mapbox/mbtiles-spec) file each, so the map still has the chart, its
+depths and its channel markers with no signal.
 
-- **What's built:** `areas.json`, the waters and the box and zoom levels of each pack. It comes from
-  the app (`scripts/offline-packs/areas.mjs` there) and is updated here when the app's waters change.
+- **The regions:** `regions.json`. Each is one zoom-10 map tile (about 30–40 km a side) with
+  charted water and US shore in it, or one of the app's waters: the bays, sounds and rivers, the
+  Intracoastal Waterway, the inlets, the Keys, the ocean near shore and the Great Lakes' US shores.
+  Named after the app's waters in it, else its biggest town. The app makes the list
+  (`scripts/offline-packs/regions.mjs` there, from NOAA's chart itself), and it's updated here when
+  the app's waters change.
 - **How:** `.github/workflows/charts.yml`, on the 5th of each month (or by hand: Actions → Offline
-  charts → Run workflow, optionally for only some packs). Six jobs fetch the chart from NOAA's
-  Chart Display Service, the same service and layers the app's map draws live
-  (`scripts/build.py`: 512 px tiles, zoom 8 to 15 or 16, inland tiles left out from zoom 12), and
-  each water's buoys and beacons (`scripts/markers.py`).
+  charts → Run workflow, optionally for only some regions). Eight jobs fetch the chart from NOAA's
+  Chart Display Service, the same service and layers the app's map draws live (`scripts/build.py`:
+  512 px tiles, zoom 10 to 16; past zoom 14 only where there's water, and not the open sea's
+  plain water, which the app enlarges from the tile above), and each region's buoys and beacons
+  (`scripts/markers.py`).
 - **Where:** each build is a release (`offline-charts-YYYYMMDD-HHMM`) holding the packs. The list
   the app reads, `offline-charts.json` (each pack's size, SHA-256, chart date and address), is the
   file of the `catalog` release, and is kept in this repository too. The release before the

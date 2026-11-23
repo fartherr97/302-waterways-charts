@@ -60,6 +60,38 @@ class Markers(unittest.TestCase):
         self.assertIn('mapExtent=-75.1,38.58,-75.05,38.63', u)
 
 
+def png(pixels):
+    import io
+    from PIL import Image
+    im = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
+    im.putdata(pixels)
+    b = io.BytesIO()
+    im.save(b, 'PNG')
+    return b.getvalue()
+
+
+class Tiles(unittest.TestCase):
+    def setUp(self):
+        try:
+            import build  # noqa: F401 (needs numpy and pillow)
+        except ImportError:
+            self.skipTest('numpy and pillow')
+        self.build = build
+
+    def test_look(self):
+        sea, land = (255, 255, 255, 255), (244, 232, 193, 255)
+        self.assertEqual(self.build.look(png([sea] * 256)), (True, True, True))            # open sea: plain
+        self.assertEqual(self.build.look(png([land] * 256)), (True, False, True))          # inland
+        self.assertEqual(self.build.look(png([(0, 0, 0, 0)] * 256)), (False, False, True))  # off the charts
+        shore = self.build.look(png([sea] * 128 + [land] * 128))
+        self.assertEqual(shore, (True, True, False))
+
+    def test_url(self):
+        u = self.build.tile_url({'export': 'https://x/export', 'layers': 'show:1,2'}, 292, 391, 10)
+        self.assertIn('size=512,512&dpi=192', u)
+        self.assertIn('layers=show:1,2', u)
+
+
 class Catalog(unittest.TestCase):
     def run_catalog(self, d, tag, releases=None):
         args = [sys.executable, os.path.join(HERE, 'catalog.py'), '--packs', os.path.join(d, 'packs'), '--tag', tag,

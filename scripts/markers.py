@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""The channel markers for each pack: NOAA's buoys, beacons and light floats in the water's box,
+"""The channel markers for each pack: NOAA's buoys, beacons and light floats in the region,
 read as the app reads them live (302 Waterways src/data/atonSource.js, fetchNoaaAtons), so with
 no signal every marker shows, not only the ones seen before. NOAA answers a box at a time (and
 only so many in one), so each pack's is asked for in squares.
 
-  python3 scripts/markers.py --areas areas.json --out build/markers [--shard 0/6] [--only a,b]
+  python3 scripts/markers.py --regions regions.json --out build/markers [--shard 0/8] [--only a,b]
 
 Writes <out>/<file without .mbtiles>.json: [{ id, kind, num, name, lat, lng, light }].
 Standard library only.
@@ -168,14 +168,15 @@ def area_markers(a, pool):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--areas', required=True)
+    ap.add_argument('--regions', required=True)
     ap.add_argument('--out', required=True)
     ap.add_argument('--shard', default='0/1')
     ap.add_argument('--only', default='')
     o = ap.parse_args()
     i, k = map(int, o.shard.split('/'))
     only = {x.strip() for x in o.only.split(',') if x.strip()}
-    areas = [a for j, a in enumerate(json.load(open(o.areas))['areas']) if j % k == i]
+    with open(o.regions) as f:
+        areas = [a for j, a in enumerate(json.load(f)['regions']) if j % k == i]
     if only:
         areas = [a for a in areas if a['file'][:-len('.mbtiles')] in only]
     os.makedirs(o.out, exist_ok=True)

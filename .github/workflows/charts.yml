@@ -1,5 +1,6 @@
 # The offline chart packs for 302 Waterways (Plus): NOAA's current nautical chart for every bay,
-# sound and tidal river the app knows (areas.json), one MBTiles file each, published as a
+# the whole coast, Maine to Texas, and the Great Lakes, in regions (regions.json: squares about
+# 30–40 km a side), one MBTiles file each, published as a
 # release's files, and the list the app reads (offline-charts.json) as the "catalog" release's
 # file. On the 5th of each month; or by hand: Actions → "Offline charts" → Run workflow (a run
 # by hand can build only some packs: the rest keep their last build).
@@ -12,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: 'Only these packs (file names without .mbtiles, comma separated, e.g. rehoboth-bay-de). Empty: all.'
+        description: 'Only these regions (ids, comma separated, e.g. z10-292-391). Empty: all.'
         required: false
         default: ''
 
@@ -24,10 +25,10 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SHARDS: 6
+  SHARDS: 8
 
 jobs:
-  # The packs, six at a time. They fetch from NOAA and run code from PyPI, so they get a read-only
+  # The packs, eight jobs at once. They fetch from NOAA and run code from PyPI, so they get a read-only
   # token that isn't left in the checkout: only the publish job can write.
   build:
     runs-on: ubuntu-latest
@@ -35,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2, 3, 4, 5]
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -49,11 +50,11 @@ jobs:
       - name: Channel markers
         env:
           ONLY: ${{ inputs.only }}
-        run: python3 scripts/markers.py --areas areas.json --out build/markers --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY"
+        run: python3 scripts/markers.py --regions regions.json --out build/markers --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY"
       - name: Chart packs
         env:
           ONLY: ${{ inputs.only }}
-        run: python3 scripts/build.py --areas areas.json --markers build/markers --out build/packs --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY" --workers 6
+        run: python3 scripts/build.py --regions regions.json --markers build/markers --out build/packs --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY" --workers 5
       - uses: actions/upload-artifact@v4
         with:
           name: packs-${{ matrix.shard }}
