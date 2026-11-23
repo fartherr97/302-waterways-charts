@@ -7,7 +7,7 @@ draws it (the same service and layers, named in regions.json), in one MBTiles fi
 
 A region is one zoom-10 map tile (about 30–40 km a side; the app's scripts/offline-packs/
 regions.mjs chose them: every square along the coast and the Great Lakes with charted water).
-Its pack holds the chart from zoom 10 to 16, drawn at twice the pixels for a phone's screen,
+Its pack holds the chart from zoom 10 to 15, drawn at twice the pixels for a phone's screen,
 but not all of it: past zoom 14, only the tiles inside a tile with water in it (not the inland
 ones), and none inside a tile with nothing drawn on it but water (the open sea: the map
 enlarges the one above). The region's channel markers go in too (markers.py).
