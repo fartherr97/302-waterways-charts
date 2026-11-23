@@ -1,0 +1,114 @@
+# The offline chart packs for 302 Waterways (Plus): NOAA's current nautical chart for every bay,
+# sound and tidal river the app knows (areas.json), one MBTiles file each, published as a
+# release's files, and the list the app reads (offline-charts.json) as the "catalog" release's
+# file. On the 5th of each month; or by hand: Actions → "Offline charts" → Run workflow (a run
+# by hand can build only some packs: the rest keep their last build).
+# No secrets: NOAA's chart is public domain, and this repository's own token publishes it.
+name: Offline charts
+
+on:
+  schedule:
+    - cron: '23 6 5 * *'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Only these packs (file names without .mbtiles, comma separated, e.g. rehoboth-bay-de). Empty: all.'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: offline-charts
+  cancel-in-progress: false
+
+env:
+  SHARDS: 6
+
+jobs:
+  # The packs, six at a time. They fetch from NOAA and run code from PyPI, so they get a read-only
+  # token that isn't left in the checkout: only the publish job can write.
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow numpy
+      - name: Test
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Channel markers
+        env:
+          ONLY: ${{ inputs.only }}
+        run: python3 scripts/markers.py --areas areas.json --out build/markers --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY"
+      - name: Chart packs
+        env:
+          ONLY: ${{ inputs.only }}
+        run: python3 scripts/build.py --areas areas.json --markers build/markers --out build/packs --shard "${{ matrix.shard }}/$SHARDS" --only "$ONLY" --workers 6
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packs-${{ matrix.shard }}
+          path: |
+            build/packs/*.mbtiles
+            build/packs/*.json
+          retention-days: 2
+          if-no-files-found: ignore
+
+  # Only this job can write: it runs nothing but gh, git and catalog.py (standard library).
+  publish:
+    needs: build
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: packs-*
+          merge-multiple: true
+          path: packs
+      - name: Publish the packs
+        run: |
+          shopt -s nullglob
+          files=(packs/*.mbtiles)
+          if [ ${#files[@]} -eq 0 ]; then echo "::error::No packs were built."; exit 1; fi
+          TAG="offline-charts-$(date -u +%Y%m%d-%H%M)"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          gh release create "$TAG" --title "Offline charts $(date -u +%Y-%m-%d)" --latest=false \
+            --notes "NOAA nautical chart packs for the 302 Waterways app's offline maps (${#files[@]} packs). Chart data: NOAA Office of Coast Survey (public domain)."
+          # (in batches: a lot of files)
+          printf '%s\0' "${files[@]}" | xargs -0 -n 20 gh release upload "$TAG" --clobber
+      - name: Update the list the app reads
+        run: |
+          gh release list --limit 100 --json tagName --jq '.[].tagName' > releases.txt
+          python3 scripts/catalog.py --packs packs --tag "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --out offline-charts.json --releases releases.txt | tee catalog.log
+          # the app reads it from the "catalog" release (a fixed address)
+          gh release view catalog >/dev/null 2>&1 || gh release create catalog --title "Chart list" --latest=false \
+            --notes "offline-charts.json: the chart packs there are and where. Replaced by each build."
+          gh release upload catalog offline-charts.json --clobber
+          # and kept here, for the next build to add to
+          git config user.name "github-actions[bot]"
+          git config user.email "41898599+github-actions[bot]@users.noreply.github.com"
+          git add offline-charts.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Chart list: $(ls packs/*.mbtiles | wc -l) packs built $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          # Releases the list no longer points at (one kept back, so a download that started on
+          # the old list still finishes)
+          grep '^UNUSED ' catalog.log | awk '{print $2}' | sort | head -n -1 | while read -r t; do gh release delete "$t" --yes --cleanup-tag; done || true

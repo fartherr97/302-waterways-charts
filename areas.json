@@ -1,0 +1,3390 @@
+{
+ "chart": {
+  "export": "https://gis.charttools.noaa.gov/arcgis/rest/services/MCS/NOAAChartDisplay/MapServer/exts/MaritimeChartService/MapServer/export",
+  "layers": "show:1,2,3,4,5,7"
+ },
+ "areas": [
+  {
+   "id": "bay:frenchman-bay-me",
+   "file": "frenchman-bay-me.mbtiles",
+   "name": "Frenchman Bay",
+   "st": [
+    "ME"
+   ],
+   "lat": 44.4381,
+   "lng": -68.24435,
+   "km": 9.3,
+   "bbox": [
+    -68.38037,
+    44.34098,
+    -68.10833,
+    44.53522
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:blue-hill-bay-me",
+   "file": "blue-hill-bay-me.mbtiles",
+   "name": "Blue Hill Bay",
+   "st": [
+    "ME"
+   ],
+   "lat": 44.3,
+   "lng": -68.5,
+   "km": 8,
+   "bbox": [
+    -68.61937,
+    44.21457,
+    -68.38063,
+    44.38543
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:penobscot-bay-me",
+   "file": "penobscot-bay-me.mbtiles",
+   "name": "Penobscot Bay",
+   "st": [
+    "ME"
+   ],
+   "lat": 44.2,
+   "lng": -68.9525,
+   "km": 13.2,
+   "bbox": [
+    -69.13689,
+    44.06781,
+    -68.76811,
+    44.33219
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:muscongus-bay-me",
+   "file": "muscongus-bay-me.mbtiles",
+   "name": "Muscongus Bay",
+   "st": [
+    "ME"
+   ],
+   "lat": 43.9305,
+   "lng": -69.34583,
+   "km": 6.8,
+   "bbox": [
+    -69.44947,
+    43.85586,
+    -69.24219,
+    44.00514
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:casco-bay-me",
+   "file": "casco-bay-me.mbtiles",
+   "name": "Casco Bay",
+   "st": [
+    "ME"
+   ],
+   "lat": 43.7306,
+   "lng": -70.1399,
+   "km": 10.2,
+   "bbox": [
+    -70.28551,
+    43.62538,
+    -69.99429,
+    43.83582
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:great-bay-nh",
+   "file": "great-bay-nh.mbtiles",
+   "name": "Great Bay",
+   "st": [
+    "NH"
+   ],
+   "lat": 43.0818,
+   "lng": -70.8628,
+   "km": 5.2,
+   "bbox": [
+    -70.94529,
+    43.02155,
+    -70.78031,
+    43.14205
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:boston-harbor-ma",
+   "file": "boston-harbor-ma.mbtiles",
+   "name": "Boston Harbor",
+   "st": [
+    "MA"
+   ],
+   "lat": 42.32675,
+   "lng": -70.95785,
+   "km": 8.5,
+   "bbox": [
+    -71.07949,
+    42.23682,
+    -70.83621,
+    42.41668
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:duxbury-and-plymouth-bays-ma",
+   "file": "duxbury-and-plymouth-bays-ma.mbtiles",
+   "name": "Duxbury and Plymouth Bays",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.97,
+   "lng": -70.63,
+   "km": 6,
+   "bbox": [
+    -70.72071,
+    41.90255,
+    -70.53929,
+    42.03745
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:cape-cod-bay-ma",
+   "file": "cape-cod-bay-ma.mbtiles",
+   "name": "Cape Cod Bay",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.85,
+   "lng": -70.3,
+   "km": 18,
+   "bbox": [
+    -70.53542,
+    41.67464,
+    -70.06458,
+    42.02536
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:pleasant-bay-ma",
+   "file": "pleasant-bay-ma.mbtiles",
+   "name": "Pleasant Bay",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.7195,
+   "lng": -69.972,
+   "km": 5,
+   "bbox": [
+    -70.05031,
+    41.66105,
+    -69.89369,
+    41.77795
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:nantucket-sound-ma",
+   "file": "nantucket-sound-ma.mbtiles",
+   "name": "Nantucket Sound",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.49512,
+   "lng": -70.32304,
+   "km": 16.8,
+   "bbox": [
+    -70.54275,
+    41.33055,
+    -70.10333,
+    41.65969
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:vineyard-sound-ma",
+   "file": "vineyard-sound-ma.mbtiles",
+   "name": "Vineyard Sound",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.44215,
+   "lng": -70.709,
+   "km": 9.8,
+   "bbox": [
+    -70.84456,
+    41.34053,
+    -70.57344,
+    41.54377
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:buzzards-bay-ma",
+   "file": "buzzards-bay-ma.mbtiles",
+   "name": "Buzzards Bay",
+   "st": [
+    "MA"
+   ],
+   "lat": 41.5518,
+   "lng": -70.8096,
+   "km": 13.8,
+   "bbox": [
+    -70.99346,
+    41.41421,
+    -70.62574,
+    41.68939
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:mount-hope-bay-ri",
+   "file": "mount-hope-bay-ri.mbtiles",
+   "name": "Mount Hope Bay",
+   "st": [
+    "RI"
+   ],
+   "lat": 41.689,
+   "lng": -71.21203,
+   "km": 5.2,
+   "bbox": [
+    -71.29272,
+    41.62875,
+    -71.13135,
+    41.74925
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:upper-narragansett-bay-ri",
+   "file": "upper-narragansett-bay-ri.mbtiles",
+   "name": "Upper Narragansett Bay",
+   "st": [
+    "RI"
+   ],
+   "lat": 41.70338,
+   "lng": -71.36045,
+   "km": 7.3,
+   "bbox": [
+    -71.46645,
+    41.62424,
+    -71.25445,
+    41.78251
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:lower-narragansett-bay-ri",
+   "file": "lower-narragansett-bay-ri.mbtiles",
+   "name": "Lower Narragansett Bay",
+   "st": [
+    "RI"
+   ],
+   "lat": 41.52945,
+   "lng": -71.3548,
+   "km": 8.7,
+   "bbox": [
+    -71.47733,
+    41.43772,
+    -71.23227,
+    41.62118
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:point-judith-pond-ri",
+   "file": "point-judith-pond-ri.mbtiles",
+   "name": "Point Judith Pond",
+   "st": [
+    "RI"
+   ],
+   "lat": 41.40077,
+   "lng": -71.508,
+   "km": 5,
+   "bbox": [
+    -71.58593,
+    41.34231,
+    -71.43007,
+    41.45922
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:fishers-island-sound-ny",
+   "file": "fishers-island-sound-ny.mbtiles",
+   "name": "Fishers Island Sound",
+   "st": [
+    "NY"
+   ],
+   "lat": 41.29,
+   "lng": -71.95,
+   "km": 8,
+   "bbox": [
+    -72.0637,
+    41.20457,
+    -71.8363,
+    41.37543
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:long-island-sound-east-ny",
+   "file": "long-island-sound-east-ny.mbtiles",
+   "name": "Long Island Sound (east)",
+   "st": [
+    "NY"
+   ],
+   "lat": 41.19784,
+   "lng": -72.28854,
+   "km": 16,
+   "bbox": [
+    -72.49769,
+    41.04047,
+    -72.07939,
+    41.35521
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:long-island-sound-central-ct",
+   "file": "long-island-sound-central-ct.mbtiles",
+   "name": "Long Island Sound (central)",
+   "st": [
+    "CT"
+   ],
+   "lat": 41.1,
+   "lng": -72.95,
+   "km": 15,
+   "bbox": [
+    -73.14691,
+    40.95162,
+    -72.75309,
+    41.24838
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:long-island-sound-west-ny",
+   "file": "long-island-sound-west-ny.mbtiles",
+   "name": "Long Island Sound (west)",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.9428,
+   "lng": -73.55712,
+   "km": 14,
+   "bbox": [
+    -73.74165,
+    40.80341,
+    -73.37259,
+    41.08219
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:gardiners-bay-ny",
+   "file": "gardiners-bay-ny.mbtiles",
+   "name": "Gardiners Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 41.0719,
+   "lng": -72.1643,
+   "km": 9.6,
+   "bbox": [
+    -72.29671,
+    40.97208,
+    -72.03189,
+    41.17172
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:peconic-bay-ny",
+   "file": "peconic-bay-ny.mbtiles",
+   "name": "Peconic Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.941,
+   "lng": -72.49107,
+   "km": 8.5,
+   "bbox": [
+    -72.61012,
+    40.85107,
+    -72.37203,
+    41.03093
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:shinnecock-bay-ny",
+   "file": "shinnecock-bay-ny.mbtiles",
+   "name": "Shinnecock Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.8572,
+   "lng": -72.50317,
+   "km": 6.8,
+   "bbox": [
+    -72.60185,
+    40.78256,
+    -72.40448,
+    40.93184
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:moriches-bay-ny",
+   "file": "moriches-bay-ny.mbtiles",
+   "name": "Moriches Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.7828,
+   "lng": -72.7484,
+   "km": 6.9,
+   "bbox": [
+    -72.84816,
+    40.70726,
+    -72.64864,
+    40.85834
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:great-south-bay-ny",
+   "file": "great-south-bay-ny.mbtiles",
+   "name": "Great South Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.68,
+   "lng": -73.15,
+   "km": 12,
+   "bbox": [
+    -73.31009,
+    40.5586,
+    -72.98991,
+    40.8014
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:south-oyster-bay-ny",
+   "file": "south-oyster-bay-ny.mbtiles",
+   "name": "South Oyster Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.6384,
+   "lng": -73.45157,
+   "km": 6.6,
+   "bbox": [
+    -73.54756,
+    40.56556,
+    -73.35558,
+    40.71124
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:hempstead-bay-ny",
+   "file": "hempstead-bay-ny.mbtiles",
+   "name": "Hempstead Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.6,
+   "lng": -73.593,
+   "km": 5.5,
+   "bbox": [
+    -73.67591,
+    40.53705,
+    -73.51009,
+    40.66295
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:jamaica-bay-ny",
+   "file": "jamaica-bay-ny.mbtiles",
+   "name": "Jamaica Bay",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.61,
+   "lng": -73.85065,
+   "km": 7.4,
+   "bbox": [
+    -73.95608,
+    40.52996,
+    -73.74522,
+    40.69004
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:new-york-harbor-ny",
+   "file": "new-york-harbor-ny.mbtiles",
+   "name": "New York Harbor",
+   "st": [
+    "NY"
+   ],
+   "lat": 40.6676,
+   "lng": -74.04053,
+   "km": 6.8,
+   "bbox": [
+    -74.13894,
+    40.59296,
+    -73.94213,
+    40.74224
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:hudson-river-tappan-zee-ny",
+   "file": "hudson-river-tappan-zee-ny.mbtiles",
+   "name": "Hudson River (Tappan Zee)",
+   "st": [
+    "NY"
+   ],
+   "lat": 41.08,
+   "lng": -73.89,
+   "km": 7,
+   "bbox": [
+    -73.99141,
+    41.00356,
+    -73.78859,
+    41.15644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:raritan-and-lower-new-york-bays-nj",
+   "file": "raritan-and-lower-new-york-bays-nj.mbtiles",
+   "name": "Raritan and Lower New York Bays",
+   "st": [
+    "NJ"
+   ],
+   "lat": 40.48236,
+   "lng": -74.13676,
+   "km": 10.6,
+   "bbox": [
+    -74.27982,
+    40.37355,
+    -73.9937,
+    40.59117
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:sandy-hook-bay-nj",
+   "file": "sandy-hook-bay-nj.mbtiles",
+   "name": "Sandy Hook Bay",
+   "st": [
+    "NJ"
+   ],
+   "lat": 40.452,
+   "lng": -74.03427,
+   "km": 6,
+   "bbox": [
+    -74.1229,
+    40.38455,
+    -73.94563,
+    40.51945
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:navesink-and-shrewsbury-rivers-nj",
+   "file": "navesink-and-shrewsbury-rivers-nj.mbtiles",
+   "name": "Navesink and Shrewsbury Rivers",
+   "st": [
+    "NJ"
+   ],
+   "lat": 40.376,
+   "lng": -74.02393,
+   "km": 5.5,
+   "bbox": [
+    -74.10657,
+    40.31305,
+    -73.9413,
+    40.43895
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:barnegat-bay-north-nj",
+   "file": "barnegat-bay-north-nj.mbtiles",
+   "name": "Barnegat Bay (north)",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.97787,
+   "lng": -74.1132,
+   "km": 8.2,
+   "bbox": [
+    -74.22703,
+    39.89064,
+    -73.99937,
+    40.06511
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:barnegat-bay-south-nj",
+   "file": "barnegat-bay-south-nj.mbtiles",
+   "name": "Barnegat Bay (south)",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.78988,
+   "lng": -74.15097,
+   "km": 7.8,
+   "bbox": [
+    -74.25982,
+    39.70624,
+    -74.04213,
+    39.87351
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:manahawkin-bay-nj",
+   "file": "manahawkin-bay-nj.mbtiles",
+   "name": "Manahawkin Bay",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.6447,
+   "lng": -74.22883,
+   "km": 5,
+   "bbox": [
+    -74.30475,
+    39.58625,
+    -74.15292,
+    39.70315
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:little-egg-harbor-nj",
+   "file": "little-egg-harbor-nj.mbtiles",
+   "name": "Little Egg Harbor",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.5692,
+   "lng": -74.30137,
+   "km": 5.7,
+   "bbox": [
+    -74.38536,
+    39.50445,
+    -74.21737,
+    39.63395
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:great-bay-nj",
+   "file": "great-bay-nj.mbtiles",
+   "name": "Great Bay",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.52,
+   "lng": -74.3986,
+   "km": 5,
+   "bbox": [
+    -74.47438,
+    39.46155,
+    -74.32282,
+    39.57845
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:great-egg-harbor-bay-nj",
+   "file": "great-egg-harbor-bay-nj.mbtiles",
+   "name": "Great Egg Harbor Bay",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.2883,
+   "lng": -74.63043,
+   "km": 5,
+   "bbox": [
+    -74.70596,
+    39.22985,
+    -74.55491,
+    39.34675
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:ludlam-bay-nj",
+   "file": "ludlam-bay-nj.mbtiles",
+   "name": "Ludlam Bay",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.17275,
+   "lng": -74.69985,
+   "km": 5,
+   "bbox": [
+    -74.77525,
+    39.1143,
+    -74.62445,
+    39.2312
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:townsend-sound-nj",
+   "file": "townsend-sound-nj.mbtiles",
+   "name": "Townsend Sound",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.13665,
+   "lng": -74.75,
+   "km": 5,
+   "bbox": [
+    -74.82536,
+    39.0782,
+    -74.67464,
+    39.1951
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:great-sound-nj",
+   "file": "great-sound-nj.mbtiles",
+   "name": "Great Sound",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.09247,
+   "lng": -74.77307,
+   "km": 5,
+   "bbox": [
+    -74.84838,
+    39.03401,
+    -74.69775,
+    39.15092
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:grassy-sound-nj",
+   "file": "grassy-sound-nj.mbtiles",
+   "name": "Grassy Sound",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.0144,
+   "lng": -74.81935,
+   "km": 5,
+   "bbox": [
+    -74.89458,
+    38.95595,
+    -74.74412,
+    39.07285
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:jarvis-sound-nj",
+   "file": "jarvis-sound-nj.mbtiles",
+   "name": "Jarvis Sound",
+   "st": [
+    "NJ"
+   ],
+   "lat": 38.97205,
+   "lng": -74.8652,
+   "km": 5,
+   "bbox": [
+    -74.94039,
+    38.9136,
+    -74.79001,
+    39.0305
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:cape-may-harbor-nj",
+   "file": "cape-may-harbor-nj.mbtiles",
+   "name": "Cape May Harbor",
+   "st": [
+    "NJ"
+   ],
+   "lat": 38.94905,
+   "lng": -74.8952,
+   "km": 5,
+   "bbox": [
+    -74.97036,
+    38.8906,
+    -74.82004,
+    39.0075
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:delaware-bay-upper-nj",
+   "file": "delaware-bay-upper-nj.mbtiles",
+   "name": "Delaware Bay (upper)",
+   "st": [
+    "NJ"
+   ],
+   "lat": 39.309,
+   "lng": -75.36518,
+   "km": 14.4,
+   "bbox": [
+    -75.54998,
+    39.16601,
+    -75.18038,
+    39.45199
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:delaware-bay-lower-nj",
+   "file": "delaware-bay-lower-nj.mbtiles",
+   "name": "Delaware Bay (lower)",
+   "st": [
+    "NJ"
+   ],
+   "lat": 38.9746,
+   "lng": -75.10924,
+   "km": 14,
+   "bbox": [
+    -75.28854,
+    38.83521,
+    -74.92994,
+    39.11399
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:rehoboth-bay-de",
+   "file": "rehoboth-bay-de.mbtiles",
+   "name": "Rehoboth Bay",
+   "st": [
+    "DE"
+   ],
+   "lat": 38.6675,
+   "lng": -75.1025,
+   "km": 5.5,
+   "bbox": [
+    -75.18312,
+    38.60455,
+    -75.02188,
+    38.73045
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:indian-river-bay-de",
+   "file": "indian-river-bay-de.mbtiles",
+   "name": "Indian River Bay",
+   "st": [
+    "DE"
+   ],
+   "lat": 38.59425,
+   "lng": -75.12625,
+   "km": 6,
+   "bbox": [
+    -75.21254,
+    38.5268,
+    -75.03996,
+    38.6617
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:little-assawoman-bay-de",
+   "file": "little-assawoman-bay-de.mbtiles",
+   "name": "Little Assawoman Bay",
+   "st": [
+    "DE"
+   ],
+   "lat": 38.47,
+   "lng": -75.064,
+   "km": 5,
+   "bbox": [
+    -75.13866,
+    38.41155,
+    -74.98934,
+    38.52845
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:assawoman-bay-md",
+   "file": "assawoman-bay-md.mbtiles",
+   "name": "Assawoman Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.42,
+   "lng": -75.08,
+   "km": 5,
+   "bbox": [
+    -75.15461,
+    38.36155,
+    -75.00539,
+    38.47845
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:isle-of-wight-bay-md",
+   "file": "isle-of-wight-bay-md.mbtiles",
+   "name": "Isle of Wight Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.36133,
+   "lng": -75.096,
+   "km": 5,
+   "bbox": [
+    -75.17055,
+    38.30288,
+    -75.02145,
+    38.41979
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:sinepuxent-bay-md",
+   "file": "sinepuxent-bay-md.mbtiles",
+   "name": "Sinepuxent Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.26,
+   "lng": -75.14167,
+   "km": 6.7,
+   "bbox": [
+    -75.23558,
+    38.18626,
+    -75.04775,
+    38.33374
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chincoteague-bay-md",
+   "file": "chincoteague-bay-md.mbtiles",
+   "name": "Chincoteague Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.09333,
+   "lng": -75.29,
+   "km": 10.2,
+   "bbox": [
+    -75.42369,
+    37.98812,
+    -75.15631,
+    38.19855
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:upper-chesapeake-bay-md",
+   "file": "upper-chesapeake-bay-md.mbtiles",
+   "name": "Upper Chesapeake Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 39.2856,
+   "lng": -76.28607,
+   "km": 11.8,
+   "bbox": [
+    -76.4406,
+    39.166,
+    -76.13155,
+    39.4052
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:patapsco-river-baltimore-md",
+   "file": "patapsco-river-baltimore-md.mbtiles",
+   "name": "Patapsco River (Baltimore)",
+   "st": [
+    "MD"
+   ],
+   "lat": 39.2,
+   "lng": -76.5,
+   "km": 6,
+   "bbox": [
+    -76.58703,
+    39.13255,
+    -76.41297,
+    39.26745
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-annapolis-md",
+   "file": "chesapeake-bay-annapolis-md.mbtiles",
+   "name": "Chesapeake Bay (Annapolis)",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.95582,
+   "lng": -76.3919,
+   "km": 11,
+   "bbox": [
+    -76.53645,
+    38.84341,
+    -76.24735,
+    39.06824
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:eastern-bay-md",
+   "file": "eastern-bay-md.mbtiles",
+   "name": "Eastern Bay",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.85,
+   "lng": -76.25,
+   "km": 7,
+   "bbox": [
+    -76.34815,
+    38.77356,
+    -76.15185,
+    38.92644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-tilghman-md",
+   "file": "chesapeake-bay-tilghman-md.mbtiles",
+   "name": "Chesapeake Bay (Tilghman)",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.6356,
+   "lng": -76.4338,
+   "km": 11.8,
+   "bbox": [
+    -76.58692,
+    38.516,
+    -76.28068,
+    38.7552
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:choptank-river-md",
+   "file": "choptank-river-md.mbtiles",
+   "name": "Choptank River",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.62,
+   "lng": -76.15,
+   "km": 7,
+   "bbox": [
+    -76.24784,
+    38.54356,
+    -76.05216,
+    38.69644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-solomons-md",
+   "file": "chesapeake-bay-solomons-md.mbtiles",
+   "name": "Chesapeake Bay (Solomons)",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.2856,
+   "lng": -76.31372,
+   "km": 11.8,
+   "bbox": [
+    -76.4661,
+    38.166,
+    -76.16135,
+    38.4052
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:patuxent-river-md",
+   "file": "patuxent-river-md.mbtiles",
+   "name": "Patuxent River",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.3491,
+   "lng": -76.50117,
+   "km": 6,
+   "bbox": [
+    -76.58717,
+    38.28165,
+    -76.41517,
+    38.41655
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:potomac-river-colonial-beach-md",
+   "file": "potomac-river-colonial-beach-md.mbtiles",
+   "name": "Potomac River (Colonial Beach)",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.25,
+   "lng": -76.9,
+   "km": 7,
+   "bbox": [
+    -76.99734,
+    38.17356,
+    -76.80266,
+    38.32644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:potomac-river-lower-va",
+   "file": "potomac-river-lower-va.mbtiles",
+   "name": "Potomac River (lower)",
+   "st": [
+    "VA"
+   ],
+   "lat": 38.0865,
+   "lng": -76.5,
+   "km": 9.2,
+   "bbox": [
+    -76.62225,
+    37.99028,
+    -76.37775,
+    38.18272
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:tangier-sound-md",
+   "file": "tangier-sound-md.mbtiles",
+   "name": "Tangier Sound",
+   "st": [
+    "MD"
+   ],
+   "lat": 38.0874,
+   "lng": -75.93197,
+   "km": 10.7,
+   "bbox": [
+    -76.07137,
+    37.97769,
+    -75.79258,
+    38.19711
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:pocomoke-sound-va",
+   "file": "pocomoke-sound-va.mbtiles",
+   "name": "Pocomoke Sound",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.92,
+   "lng": -75.7728,
+   "km": 7.1,
+   "bbox": [
+    -75.87084,
+    37.84266,
+    -75.67476,
+    37.99734
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-smith-point-va",
+   "file": "chesapeake-bay-smith-point-va.mbtiles",
+   "name": "Chesapeake Bay (Smith Point)",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.85,
+   "lng": -76.12155,
+   "km": 13.3,
+   "bbox": [
+    -76.2901,
+    37.71691,
+    -75.953,
+    37.98309
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:rappahannock-river-va",
+   "file": "rappahannock-river-va.mbtiles",
+   "name": "Rappahannock River",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.6368,
+   "lng": -76.41057,
+   "km": 6.4,
+   "bbox": [
+    -76.50028,
+    37.56576,
+    -76.32085,
+    37.70784
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-lower-va",
+   "file": "chesapeake-bay-lower-va.mbtiles",
+   "name": "Chesapeake Bay (lower)",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.3865,
+   "lng": -76.12262,
+   "km": 14,
+   "bbox": [
+    -76.29805,
+    37.24711,
+    -75.9472,
+    37.52589
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:mobjack-bay-va",
+   "file": "mobjack-bay-va.mbtiles",
+   "name": "Mobjack Bay",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.32,
+   "lng": -76.35,
+   "km": 7,
+   "bbox": [
+    -76.44612,
+    37.24356,
+    -76.25388,
+    37.39644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:york-river-va",
+   "file": "york-river-va.mbtiles",
+   "name": "York River",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.2356,
+   "lng": -76.45,
+   "km": 6.3,
+   "bbox": [
+    -76.5381,
+    37.16546,
+    -76.3619,
+    37.30574
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:chesapeake-bay-virginia-beach-va",
+   "file": "chesapeake-bay-virginia-beach-va.mbtiles",
+   "name": "Chesapeake Bay (Virginia Beach)",
+   "st": [
+    "VA"
+   ],
+   "lat": 37.0644,
+   "lng": -76.1335,
+   "km": 11.8,
+   "bbox": [
+    -76.28339,
+    36.9448,
+    -75.98361,
+    37.184
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:hampton-roads-and-the-james-va",
+   "file": "hampton-roads-and-the-james-va.mbtiles",
+   "name": "Hampton Roads and the James",
+   "st": [
+    "VA"
+   ],
+   "lat": 36.96088,
+   "lng": -76.40985,
+   "km": 7.6,
+   "bbox": [
+    -76.51227,
+    36.87904,
+    -76.30743,
+    37.04271
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:back-bay-va",
+   "file": "back-bay-va.mbtiles",
+   "name": "Back Bay",
+   "st": [
+    "VA"
+   ],
+   "lat": 36.6536,
+   "lng": -75.94103,
+   "km": 6.8,
+   "bbox": [
+    -76.03407,
+    36.57896,
+    -75.848,
+    36.72824
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:currituck-sound-nc",
+   "file": "currituck-sound-nc.mbtiles",
+   "name": "Currituck Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 36.35,
+   "lng": -75.87825,
+   "km": 9.3,
+   "bbox": [
+    -75.99884,
+    36.25288,
+    -75.75766,
+    36.44712
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:albemarle-sound-nc",
+   "file": "albemarle-sound-nc.mbtiles",
+   "name": "Albemarle Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 36.05,
+   "lng": -76.08134,
+   "km": 16.7,
+   "bbox": [
+    -76.28377,
+    35.88633,
+    -75.87891,
+    36.21367
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:croatan-sound-nc",
+   "file": "croatan-sound-nc.mbtiles",
+   "name": "Croatan Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 35.85,
+   "lng": -75.7,
+   "km": 6,
+   "bbox": [
+    -75.78321,
+    35.78255,
+    -75.61679,
+    35.91745
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:pamlico-sound-north-nc",
+   "file": "pamlico-sound-north-nc.mbtiles",
+   "name": "Pamlico Sound (north)",
+   "st": [
+    "NC"
+   ],
+   "lat": 35.5392,
+   "lng": -75.7033,
+   "km": 19.2,
+   "bbox": [
+    -75.93207,
+    35.35305,
+    -75.47453,
+    35.72535
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:pamlico-sound-south-nc",
+   "file": "pamlico-sound-south-nc.mbtiles",
+   "name": "Pamlico Sound (south)",
+   "st": [
+    "NC"
+   ],
+   "lat": 35.1716,
+   "lng": -76.03626,
+   "km": 19.6,
+   "bbox": [
+    -76.26839,
+    34.98185,
+    -75.80413,
+    35.36135
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:pamlico-river-nc",
+   "file": "pamlico-river-nc.mbtiles",
+   "name": "Pamlico River",
+   "st": [
+    "NC"
+   ],
+   "lat": 35.4,
+   "lng": -76.8,
+   "km": 8,
+   "bbox": [
+    -76.90481,
+    35.31457,
+    -76.69519,
+    35.48543
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:neuse-river-nc",
+   "file": "neuse-river-nc.mbtiles",
+   "name": "Neuse River",
+   "st": [
+    "NC"
+   ],
+   "lat": 35.0203,
+   "lng": -76.67203,
+   "km": 7.8,
+   "bbox": [
+    -76.77415,
+    34.93667,
+    -76.5699,
+    35.10393
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:core-sound-nc",
+   "file": "core-sound-nc.mbtiles",
+   "name": "Core Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 34.853,
+   "lng": -76.35367,
+   "km": 8,
+   "bbox": [
+    -76.45777,
+    34.76757,
+    -76.24956,
+    34.93843
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:back-sound-nc",
+   "file": "back-sound-nc.mbtiles",
+   "name": "Back Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 34.6854,
+   "lng": -76.5478,
+   "km": 5.9,
+   "bbox": [
+    -76.62873,
+    34.61885,
+    -76.46687,
+    34.75195
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:bogue-sound-nc",
+   "file": "bogue-sound-nc.mbtiles",
+   "name": "Bogue Sound",
+   "st": [
+    "NC"
+   ],
+   "lat": 34.7,
+   "lng": -76.9,
+   "km": 8,
+   "bbox": [
+    -77.00391,
+    34.61457,
+    -76.79609,
+    34.78543
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:new-river-nc",
+   "file": "new-river-nc.mbtiles",
+   "name": "New River",
+   "st": [
+    "NC"
+   ],
+   "lat": 34.6236,
+   "lng": -77.37873,
+   "km": 5.7,
+   "bbox": [
+    -77.45742,
+    34.55885,
+    -77.30005,
+    34.68835
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:cape-fear-river-nc",
+   "file": "cape-fear-river-nc.mbtiles",
+   "name": "Cape Fear River",
+   "st": [
+    "NC"
+   ],
+   "lat": 33.9976,
+   "lng": -77.94133,
+   "km": 6.8,
+   "bbox": [
+    -78.03136,
+    33.92296,
+    -77.8513,
+    34.07224
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:winyah-bay-sc",
+   "file": "winyah-bay-sc.mbtiles",
+   "name": "Winyah Bay",
+   "st": [
+    "SC"
+   ],
+   "lat": 33.2988,
+   "lng": -79.26577,
+   "km": 6.5,
+   "bbox": [
+    -79.35184,
+    33.22686,
+    -79.17969,
+    33.37074
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:charleston-harbor-sc",
+   "file": "charleston-harbor-sc.mbtiles",
+   "name": "Charleston Harbor",
+   "st": [
+    "SC"
+   ],
+   "lat": 32.7672,
+   "lng": -79.90533,
+   "km": 7.3,
+   "bbox": [
+    -79.99944,
+    32.68806,
+    -79.81121,
+    32.84634
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-helena-sound-sc",
+   "file": "st-helena-sound-sc.mbtiles",
+   "name": "St. Helena Sound",
+   "st": [
+    "SC"
+   ],
+   "lat": 32.4527,
+   "lng": -80.46597,
+   "km": 8.9,
+   "bbox": [
+    -80.57681,
+    32.35917,
+    -80.35514,
+    32.54623
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:port-royal-sound-sc",
+   "file": "port-royal-sound-sc.mbtiles",
+   "name": "Port Royal Sound",
+   "st": [
+    "SC"
+   ],
+   "lat": 32.2635,
+   "lng": -80.71595,
+   "km": 9.1,
+   "bbox": [
+    -80.82868,
+    32.16818,
+    -80.60322,
+    32.35882
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:calibogue-sound-sc",
+   "file": "calibogue-sound-sc.mbtiles",
+   "name": "Calibogue Sound",
+   "st": [
+    "SC"
+   ],
+   "lat": 32.1572,
+   "lng": -80.82423,
+   "km": 5.7,
+   "bbox": [
+    -80.90071,
+    32.09245,
+    -80.74775,
+    32.22195
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:wassaw-sound-ga",
+   "file": "wassaw-sound-ga.mbtiles",
+   "name": "Wassaw Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.938,
+   "lng": -80.95567,
+   "km": 5.7,
+   "bbox": [
+    -81.03196,
+    31.87325,
+    -80.87937,
+    32.00275
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:ossabaw-sound-ga",
+   "file": "ossabaw-sound-ga.mbtiles",
+   "name": "Ossabaw Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.8252,
+   "lng": -81.05873,
+   "km": 5,
+   "bbox": [
+    -81.12753,
+    31.76675,
+    -80.98994,
+    31.88365
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-catherines-sound-ga",
+   "file": "st-catherines-sound-ga.mbtiles",
+   "name": "St. Catherines Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.7,
+   "lng": -81.17,
+   "km": 6,
+   "bbox": [
+    -81.24927,
+    31.63255,
+    -81.09073,
+    31.76745
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:sapelo-sound-ga",
+   "file": "sapelo-sound-ga.mbtiles",
+   "name": "Sapelo Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.5554,
+   "lng": -81.2221,
+   "km": 5.9,
+   "bbox": [
+    -81.30019,
+    31.48885,
+    -81.14401,
+    31.62195
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:doboy-sound-ga",
+   "file": "doboy-sound-ga.mbtiles",
+   "name": "Doboy Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.389,
+   "lng": -81.31053,
+   "km": 5.2,
+   "bbox": [
+    -81.38111,
+    31.32875,
+    -81.23995,
+    31.44925
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-simons-sound-ga",
+   "file": "st-simons-sound-ga.mbtiles",
+   "name": "St. Simons Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 31.1192,
+   "lng": -81.4396,
+   "km": 5.4,
+   "bbox": [
+    -81.51208,
+    31.05715,
+    -81.36712,
+    31.18125
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-andrew-sound-ga",
+   "file": "st-andrew-sound-ga.mbtiles",
+   "name": "St. Andrew Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 30.968,
+   "lng": -81.44397,
+   "km": 6,
+   "bbox": [
+    -81.52263,
+    30.90055,
+    -81.36531,
+    31.03545
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:cumberland-sound-ga",
+   "file": "cumberland-sound-ga.mbtiles",
+   "name": "Cumberland Sound",
+   "st": [
+    "GA"
+   ],
+   "lat": 30.75,
+   "lng": -81.47697,
+   "km": 7.1,
+   "bbox": [
+    -81.56696,
+    30.67266,
+    -81.38698,
+    30.82734
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-johns-river-jacksonville-fl",
+   "file": "st-johns-river-jacksonville-fl.mbtiles",
+   "name": "St. Johns River (Jacksonville)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.3908,
+   "lng": -81.55,
+   "km": 6.6,
+   "bbox": [
+    -81.63444,
+    30.31796,
+    -81.46556,
+    30.46364
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-johns-river-green-cove-springs-fl",
+   "file": "st-johns-river-green-cove-springs-fl.mbtiles",
+   "name": "St. Johns River (Green Cove Springs)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30,
+   "lng": -81.65,
+   "km": 8,
+   "bbox": [
+    -81.74865,
+    29.91457,
+    -81.55135,
+    30.08543
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:mosquito-lagoon-fl",
+   "file": "mosquito-lagoon-fl.mbtiles",
+   "name": "Mosquito Lagoon",
+   "st": [
+    "FL"
+   ],
+   "lat": 28.83515,
+   "lng": -80.80155,
+   "km": 8.2,
+   "bbox": [
+    -80.90113,
+    28.74792,
+    -80.70197,
+    28.92238
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:indian-river-lagoon-titusville-fl",
+   "file": "indian-river-lagoon-titusville-fl.mbtiles",
+   "name": "Indian River Lagoon (Titusville)",
+   "st": [
+    "FL"
+   ],
+   "lat": 28.58245,
+   "lng": -80.7715,
+   "km": 8.5,
+   "bbox": [
+    -80.87391,
+    28.49252,
+    -80.66909,
+    28.67238
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:banana-river-fl",
+   "file": "banana-river-fl.mbtiles",
+   "name": "Banana River",
+   "st": [
+    "FL"
+   ],
+   "lat": 28.306,
+   "lng": -80.6455,
+   "km": 6.4,
+   "bbox": [
+    -80.72619,
+    28.23496,
+    -80.56481,
+    28.37704
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:indian-river-lagoon-melbourne-fl",
+   "file": "indian-river-lagoon-melbourne-fl.mbtiles",
+   "name": "Indian River Lagoon (Melbourne)",
+   "st": [
+    "FL"
+   ],
+   "lat": 28.0955,
+   "lng": -80.5919,
+   "km": 7.9,
+   "bbox": [
+    -80.68772,
+    28.01097,
+    -80.49608,
+    28.18003
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:indian-river-lagoon-vero-beach-fl",
+   "file": "indian-river-lagoon-vero-beach-fl.mbtiles",
+   "name": "Indian River Lagoon (Vero Beach)",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.753,
+   "lng": -80.4183,
+   "km": 7.3,
+   "bbox": [
+    -80.50772,
+    27.67386,
+    -80.32888,
+    27.83214
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:indian-river-lagoon-fort-pierce-fl",
+   "file": "indian-river-lagoon-fort-pierce-fl.mbtiles",
+   "name": "Indian River Lagoon (Fort Pierce)",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.353,
+   "lng": -80.2599,
+   "km": 7.8,
+   "bbox": [
+    -80.35406,
+    27.26937,
+    -80.16574,
+    27.43663
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-lucie-river-fl",
+   "file": "st-lucie-river-fl.mbtiles",
+   "name": "St. Lucie River",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.1982,
+   "lng": -80.22,
+   "km": 6,
+   "bbox": [
+    -80.29583,
+    27.13075,
+    -80.14417,
+    27.26565
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:lake-worth-lagoon-fl",
+   "file": "lake-worth-lagoon-fl.mbtiles",
+   "name": "Lake Worth Lagoon",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.6488,
+   "lng": -80.04533,
+   "km": 6.5,
+   "bbox": [
+    -80.12583,
+    26.57686,
+    -79.96484,
+    26.72074
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:biscayne-bay-north-fl",
+   "file": "biscayne-bay-north-fl.mbtiles",
+   "name": "Biscayne Bay (north)",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.8,
+   "lng": -80.16,
+   "km": 7,
+   "bbox": [
+    -80.2449,
+    25.72356,
+    -80.0751,
+    25.87644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:biscayne-bay-south-fl",
+   "file": "biscayne-bay-south-fl.mbtiles",
+   "name": "Biscayne Bay (south)",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.5572,
+   "lng": -80.25478,
+   "km": 11.9,
+   "bbox": [
+    -80.38835,
+    25.4367,
+    -80.12121,
+    25.6777
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:card-sound-fl",
+   "file": "card-sound-fl.mbtiles",
+   "name": "Card Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.3192,
+   "lng": -80.35807,
+   "km": 5.2,
+   "bbox": [
+    -80.42472,
+    25.25895,
+    -80.29141,
+    25.37945
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:barnes-sound-fl",
+   "file": "barnes-sound-fl.mbtiles",
+   "name": "Barnes Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.2156,
+   "lng": -80.42,
+   "km": 5,
+   "bbox": [
+    -80.48461,
+    25.15715,
+    -80.35539,
+    25.27405
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:florida-bay-fl",
+   "file": "florida-bay-fl.mbtiles",
+   "name": "Florida Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.0203,
+   "lng": -80.75,
+   "km": 20.2,
+   "bbox": [
+    -80.96535,
+    24.82516,
+    -80.53465,
+    25.21544
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:whitewater-bay-fl",
+   "file": "whitewater-bay-fl.mbtiles",
+   "name": "Whitewater Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 25.318,
+   "lng": -81.04403,
+   "km": 8,
+   "bbox": [
+    -81.13854,
+    25.23257,
+    -80.94952,
+    25.40343
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:estero-bay-fl",
+   "file": "estero-bay-fl.mbtiles",
+   "name": "Estero Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.4081,
+   "lng": -81.86697,
+   "km": 5,
+   "bbox": [
+    -81.93223,
+    26.34965,
+    -81.8017,
+    26.46655
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:san-carlos-bay-fl",
+   "file": "san-carlos-bay-fl.mbtiles",
+   "name": "San Carlos Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.48,
+   "lng": -82.02,
+   "km": 6,
+   "bbox": [
+    -82.09535,
+    26.41255,
+    -81.94465,
+    26.54745
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:pine-island-sound-fl",
+   "file": "pine-island-sound-fl.mbtiles",
+   "name": "Pine Island Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.57595,
+   "lng": -82.117,
+   "km": 9.5,
+   "bbox": [
+    -82.22761,
+    26.47703,
+    -82.00639,
+    26.67487
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:charlotte-harbor-fl",
+   "file": "charlotte-harbor-fl.mbtiles",
+   "name": "Charlotte Harbor",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.8356,
+   "lng": -82.1322,
+   "km": 10.2,
+   "bbox": [
+    -82.25011,
+    26.73038,
+    -82.01429,
+    26.94082
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lemon-bay-fl",
+   "file": "lemon-bay-fl.mbtiles",
+   "name": "Lemon Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 26.95077,
+   "lng": -82.36833,
+   "km": 5.5,
+   "bbox": [
+    -82.43895,
+    26.88782,
+    -82.29771,
+    27.01372
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:sarasota-bay-fl",
+   "file": "sarasota-bay-fl.mbtiles",
+   "name": "Sarasota Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.38,
+   "lng": -82.6,
+   "km": 7,
+   "bbox": [
+    -82.68608,
+    27.30356,
+    -82.51392,
+    27.45644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:tampa-bay-lower-fl",
+   "file": "tampa-bay-lower-fl.mbtiles",
+   "name": "Tampa Bay (lower)",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.6344,
+   "lng": -82.66217,
+   "km": 11.2,
+   "bbox": [
+    -82.79109,
+    27.52019,
+    -82.53326,
+    27.74861
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:tampa-bay-middle-fl",
+   "file": "tampa-bay-middle-fl.mbtiles",
+   "name": "Tampa Bay (middle)",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.7581,
+   "lng": -82.56217,
+   "km": 9.6,
+   "bbox": [
+    -82.67498,
+    27.65828,
+    -82.44937,
+    27.85792
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:hillsborough-bay-fl",
+   "file": "hillsborough-bay-fl.mbtiles",
+   "name": "Hillsborough Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.85,
+   "lng": -82.45,
+   "km": 7,
+   "bbox": [
+    -82.53645,
+    27.77356,
+    -82.36355,
+    27.92644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:old-tampa-bay-fl",
+   "file": "old-tampa-bay-fl.mbtiles",
+   "name": "Old Tampa Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.94775,
+   "lng": -82.61492,
+   "km": 8.5,
+   "bbox": [
+    -82.71673,
+    27.85782,
+    -82.51312,
+    28.03768
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:boca-ciega-bay-fl",
+   "file": "boca-ciega-bay-fl.mbtiles",
+   "name": "Boca Ciega Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 27.7273,
+   "lng": -82.7322,
+   "km": 5.4,
+   "bbox": [
+    -82.8023,
+    27.66525,
+    -82.6621,
+    27.78935
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-joseph-sound-and-clearwater-harbor-fl",
+   "file": "st-joseph-sound-and-clearwater-harbor-fl.mbtiles",
+   "name": "St. Joseph Sound and Clearwater Harbor",
+   "st": [
+    "FL"
+   ],
+   "lat": 28.05,
+   "lng": -82.8,
+   "km": 7,
+   "bbox": [
+    -82.88661,
+    27.97356,
+    -82.71339,
+    28.12644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:apalachicola-bay-fl",
+   "file": "apalachicola-bay-fl.mbtiles",
+   "name": "Apalachicola Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 29.6728,
+   "lng": -84.9814,
+   "km": 12.1,
+   "bbox": [
+    -85.12216,
+    29.5505,
+    -84.84064,
+    29.7951
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:st-george-sound-fl",
+   "file": "st-george-sound-fl.mbtiles",
+   "name": "St. George Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 29.7656,
+   "lng": -84.75207,
+   "km": 12.2,
+   "bbox": [
+    -84.894,
+    29.6424,
+    -84.61015,
+    29.8888
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:st-vincent-sound-fl",
+   "file": "st-vincent-sound-fl.mbtiles",
+   "name": "St. Vincent Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 29.6944,
+   "lng": -85.14587,
+   "km": 5,
+   "bbox": [
+    -85.21316,
+    29.63595,
+    -85.07858,
+    29.75285
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-joseph-bay-fl",
+   "file": "st-joseph-bay-fl.mbtiles",
+   "name": "St. Joseph Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 29.8,
+   "lng": -85.3576,
+   "km": 6.3,
+   "bbox": [
+    -85.43843,
+    29.72986,
+    -85.27677,
+    29.87014
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:east-bay-panama-city-fl",
+   "file": "east-bay-panama-city-fl.mbtiles",
+   "name": "East Bay (Panama City)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.0592,
+   "lng": -85.54307,
+   "km": 6.3,
+   "bbox": [
+    -85.62411,
+    29.98906,
+    -85.46202,
+    30.12934
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:st-andrew-bay-fl",
+   "file": "st-andrew-bay-fl.mbtiles",
+   "name": "St. Andrew Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.14325,
+   "lng": -85.69377,
+   "km": 9.9,
+   "bbox": [
+    -85.81232,
+    30.04073,
+    -85.57523,
+    30.24577
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:west-bay-panama-city-fl",
+   "file": "west-bay-panama-city-fl.mbtiles",
+   "name": "West Bay (Panama City)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.282,
+   "lng": -85.84167,
+   "km": 6.3,
+   "bbox": [
+    -85.92289,
+    30.21186,
+    -85.76044,
+    30.35214
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:choctawhatchee-bay-east-fl",
+   "file": "choctawhatchee-bay-east-fl.mbtiles",
+   "name": "Choctawhatchee Bay (east)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.4362,
+   "lng": -86.18335,
+   "km": 11.5,
+   "bbox": [
+    -86.31894,
+    30.31929,
+    -86.04776,
+    30.55311
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:choctawhatchee-bay-destin-fl",
+   "file": "choctawhatchee-bay-destin-fl.mbtiles",
+   "name": "Choctawhatchee Bay (Destin)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.4435,
+   "lng": -86.45,
+   "km": 9.2,
+   "bbox": [
+    -86.56161,
+    30.34728,
+    -86.33839,
+    30.53972
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:santa-rosa-sound-fl",
+   "file": "santa-rosa-sound-fl.mbtiles",
+   "name": "Santa Rosa Sound",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.389,
+   "lng": -86.85173,
+   "km": 7.9,
+   "bbox": [
+    -86.94973,
+    30.30447,
+    -86.75374,
+    30.47353
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:east-bay-pensacola-fl",
+   "file": "east-bay-pensacola-fl.mbtiles",
+   "name": "East Bay (Pensacola)",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.45,
+   "lng": -87,
+   "km": 7,
+   "bbox": [
+    -87.08867,
+    30.37356,
+    -86.91133,
+    30.52644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:escambia-bay-fl",
+   "file": "escambia-bay-fl.mbtiles",
+   "name": "Escambia Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.4808,
+   "lng": -87.13,
+   "km": 5.6,
+   "bbox": [
+    -87.20409,
+    30.41695,
+    -87.05591,
+    30.54465
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:pensacola-bay-fl",
+   "file": "pensacola-bay-fl.mbtiles",
+   "name": "Pensacola Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.38675,
+   "lng": -87.13957,
+   "km": 8.5,
+   "bbox": [
+    -87.24382,
+    30.29682,
+    -87.03533,
+    30.47668
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:big-lagoon-fl",
+   "file": "big-lagoon-fl.mbtiles",
+   "name": "Big Lagoon",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.31627,
+   "lng": -87.36827,
+   "km": 5,
+   "bbox": [
+    -87.43598,
+    30.25781,
+    -87.30055,
+    30.37472
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:perdido-bay-fl",
+   "file": "perdido-bay-fl.mbtiles",
+   "name": "Perdido Bay",
+   "st": [
+    "FL"
+   ],
+   "lat": 30.38,
+   "lng": -87.43,
+   "km": 7,
+   "bbox": [
+    -87.51861,
+    30.30356,
+    -87.34139,
+    30.45644
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:north-mobile-bay-al",
+   "file": "north-mobile-bay-al.mbtiles",
+   "name": "North Mobile Bay",
+   "st": [
+    "AL"
+   ],
+   "lat": 30.5746,
+   "lng": -87.9875,
+   "km": 14.8,
+   "bbox": [
+    -88.15775,
+    30.42802,
+    -87.81725,
+    30.72118
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:south-mobile-bay-al",
+   "file": "south-mobile-bay-al.mbtiles",
+   "name": "South Mobile Bay",
+   "st": [
+    "AL"
+   ],
+   "lat": 30.3735,
+   "lng": -87.9972,
+   "km": 16.7,
+   "bbox": [
+    -88.18691,
+    30.20983,
+    -87.80749,
+    30.53717
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:bon-secour-bay-al",
+   "file": "bon-secour-bay-al.mbtiles",
+   "name": "Bon Secour Bay",
+   "st": [
+    "AL"
+   ],
+   "lat": 30.2772,
+   "lng": -87.8194,
+   "km": 9.6,
+   "bbox": [
+    -87.93499,
+    30.17738,
+    -87.70381,
+    30.37702
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:mississippi-sound-alabama-al",
+   "file": "mississippi-sound-alabama-al.mbtiles",
+   "name": "Mississippi Sound (Alabama)",
+   "st": [
+    "AL"
+   ],
+   "lat": 30.328,
+   "lng": -88.27777,
+   "km": 12.1,
+   "bbox": [
+    -88.41946,
+    30.2057,
+    -88.13607,
+    30.4503
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:mississippi-sound-east-ms",
+   "file": "mississippi-sound-east-ms.mbtiles",
+   "name": "Mississippi Sound (east)",
+   "st": [
+    "MS"
+   ],
+   "lat": 30.23025,
+   "lng": -88.6604,
+   "km": 23.1,
+   "bbox": [
+    -88.91644,
+    30.00903,
+    -88.40436,
+    30.45147
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:mississippi-sound-west-ms",
+   "file": "mississippi-sound-west-ms.mbtiles",
+   "name": "Mississippi Sound (west)",
+   "st": [
+    "MS"
+   ],
+   "lat": 30.25425,
+   "lng": -89.1448,
+   "km": 23.7,
+   "bbox": [
+    -89.40715,
+    30.02763,
+    -88.88245,
+    30.48087
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:bay-st-louis-ms",
+   "file": "bay-st-louis-ms.mbtiles",
+   "name": "Bay St. Louis",
+   "st": [
+    "MS"
+   ],
+   "lat": 30.3265,
+   "lng": -89.33165,
+   "km": 5.2,
+   "bbox": [
+    -89.40145,
+    30.26625,
+    -89.26185,
+    30.38675
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:biloxi-back-bay-ms",
+   "file": "biloxi-back-bay-ms.mbtiles",
+   "name": "Biloxi Back Bay",
+   "st": [
+    "MS"
+   ],
+   "lat": 30.42,
+   "lng": -88.90915,
+   "km": 5,
+   "bbox": [
+    -88.97693,
+    30.36155,
+    -88.84137,
+    30.47845
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:lake-pontchartrain-la",
+   "file": "lake-pontchartrain-la.mbtiles",
+   "name": "Lake Pontchartrain",
+   "st": [
+    "LA"
+   ],
+   "lat": 30.1638,
+   "lng": -90.12494,
+   "km": 30,
+   "bbox": [
+    -90.45258,
+    29.88053,
+    -89.7973,
+    30.44707
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lake-maurepas-la",
+   "file": "lake-maurepas-la.mbtiles",
+   "name": "Lake Maurepas",
+   "st": [
+    "LA"
+   ],
+   "lat": 30.2464,
+   "lng": -90.4917,
+   "km": 10.9,
+   "bbox": [
+    -90.62078,
+    30.13489,
+    -90.36262,
+    30.35791
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lake-borgne-la",
+   "file": "lake-borgne-la.mbtiles",
+   "name": "Lake Borgne",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.99625,
+   "lng": -89.68,
+   "km": 18.4,
+   "bbox": [
+    -89.88663,
+    29.81729,
+    -89.47337,
+    30.17521
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:chandeleur-sound-la",
+   "file": "chandeleur-sound-la.mbtiles",
+   "name": "Chandeleur Sound",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.93875,
+   "lng": -89.0163,
+   "km": 24.5,
+   "bbox": [
+    -89.28612,
+    29.70494,
+    -88.74648,
+    30.17256
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:breton-sound-la",
+   "file": "breton-sound-la.mbtiles",
+   "name": "Breton Sound",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.52975,
+   "lng": -89.28547,
+   "km": 23.8,
+   "bbox": [
+    -89.54696,
+    29.30223,
+    -89.02399,
+    29.75727
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lake-salvador-la",
+   "file": "lake-salvador-la.mbtiles",
+   "name": "Lake Salvador",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.7264,
+   "lng": -90.22,
+   "km": 10.8,
+   "bbox": [
+    -90.34737,
+    29.61579,
+    -90.09263,
+    29.83701
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:barataria-bay-la",
+   "file": "barataria-bay-la.mbtiles",
+   "name": "Barataria Bay",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.3492,
+   "lng": -89.923,
+   "km": 16.4,
+   "bbox": [
+    -90.10767,
+    29.18823,
+    -89.73833,
+    29.51017
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:terrebonne-bay-la",
+   "file": "terrebonne-bay-la.mbtiles",
+   "name": "Terrebonne Bay",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.10638,
+   "lng": -90.62962,
+   "km": 20.7,
+   "bbox": [
+    -90.85812,
+    28.90673,
+    -90.40113,
+    29.30602
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:atchafalaya-bay-la",
+   "file": "atchafalaya-bay-la.mbtiles",
+   "name": "Atchafalaya Bay",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.387,
+   "lng": -91.3268,
+   "km": 13.5,
+   "bbox": [
+    -91.48161,
+    29.25211,
+    -91.17199,
+    29.52189
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:vermilion-bay-la",
+   "file": "vermilion-bay-la.mbtiles",
+   "name": "Vermilion Bay",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.71,
+   "lng": -92.05,
+   "km": 15,
+   "bbox": [
+    -92.22084,
+    29.56162,
+    -91.87916,
+    29.85838
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:calcasieu-lake-la",
+   "file": "calcasieu-lake-la.mbtiles",
+   "name": "Calcasieu Lake",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.9,
+   "lng": -93.3169,
+   "km": 10.8,
+   "bbox": [
+    -93.44449,
+    29.78939,
+    -93.18931,
+    30.01061
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:sabine-lake-la",
+   "file": "sabine-lake-la.mbtiles",
+   "name": "Sabine Lake",
+   "st": [
+    "LA"
+   ],
+   "lat": 29.8745,
+   "lng": -93.84517,
+   "km": 12.9,
+   "bbox": [
+    -93.99451,
+    29.745,
+    -93.69583,
+    30.004
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:trinity-bay-tx",
+   "file": "trinity-bay-tx.mbtiles",
+   "name": "Trinity Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 29.6125,
+   "lng": -94.81963,
+   "km": 8.8,
+   "bbox": [
+    -94.92617,
+    29.51987,
+    -94.71309,
+    29.70513
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:galveston-bay-tx",
+   "file": "galveston-bay-tx.mbtiles",
+   "name": "Galveston Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 29.5151,
+   "lng": -94.8506,
+   "km": 14.5,
+   "bbox": [
+    -95.01594,
+    29.37122,
+    -94.68526,
+    29.65898
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:east-bay-tx",
+   "file": "east-bay-tx.mbtiles",
+   "name": "East Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 29.4535,
+   "lng": -94.58627,
+   "km": 9.3,
+   "bbox": [
+    -94.6978,
+    29.35638,
+    -94.47473,
+    29.55062
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:west-bay-tx",
+   "file": "west-bay-tx.mbtiles",
+   "name": "West Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 29.146,
+   "lng": -94.96557,
+   "km": 10.8,
+   "bbox": [
+    -95.09221,
+    29.03539,
+    -94.83892,
+    29.25661
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:east-matagorda-bay-tx",
+   "file": "east-matagorda-bay-tx.mbtiles",
+   "name": "East Matagorda Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.6916,
+   "lng": -95.8123,
+   "km": 7.9,
+   "bbox": [
+    -95.90866,
+    28.60707,
+    -95.71594,
+    28.77613
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:matagorda-bay-tx",
+   "file": "matagorda-bay-tx.mbtiles",
+   "name": "Matagorda Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.52975,
+   "lng": -96.28387,
+   "km": 23.7,
+   "bbox": [
+    -96.54182,
+    28.30313,
+    -96.02593,
+    28.75637
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lavaca-bay-tx",
+   "file": "lavaca-bay-tx.mbtiles",
+   "name": "Lavaca Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.623,
+   "lng": -96.6,
+   "km": 6,
+   "bbox": [
+    -96.67684,
+    28.55555,
+    -96.52316,
+    28.69045
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:san-antonio-bay-tx",
+   "file": "san-antonio-bay-tx.mbtiles",
+   "name": "San Antonio Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.27,
+   "lng": -96.696,
+   "km": 10.5,
+   "bbox": [
+    -96.81853,
+    28.16209,
+    -96.57347,
+    28.37791
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:aransas-bay-tx",
+   "file": "aransas-bay-tx.mbtiles",
+   "name": "Aransas Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.044,
+   "lng": -97.02037,
+   "km": 12.6,
+   "bbox": [
+    -97.16403,
+    27.9172,
+    -96.8767,
+    28.1708
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:copano-bay-tx",
+   "file": "copano-bay-tx.mbtiles",
+   "name": "Copano Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 28.1352,
+   "lng": -97.0986,
+   "km": 6.5,
+   "bbox": [
+    -97.18018,
+    28.06326,
+    -97.01702,
+    28.20714
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:corpus-christi-bay-tx",
+   "file": "corpus-christi-bay-tx.mbtiles",
+   "name": "Corpus Christi Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 27.7665,
+   "lng": -97.24325,
+   "km": 17,
+   "bbox": [
+    -97.43127,
+    27.60013,
+    -97.05523,
+    27.93287
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:baffin-bay-tx",
+   "file": "baffin-bay-tx.mbtiles",
+   "name": "Baffin Bay",
+   "st": [
+    "TX"
+   ],
+   "lat": 27.292,
+   "lng": -97.53823,
+   "km": 8.1,
+   "bbox": [
+    -97.63538,
+    27.20567,
+    -97.44109,
+    27.37833
+   ],
+   "minz": 8,
+   "maxz": 16
+  },
+  {
+   "id": "bay:upper-laguna-madre-tx",
+   "file": "upper-laguna-madre-tx.mbtiles",
+   "name": "Upper Laguna Madre",
+   "st": [
+    "TX"
+   ],
+   "lat": 27.49275,
+   "lng": -97.27977,
+   "km": 24.8,
+   "bbox": [
+    -97.5464,
+    27.25624,
+    -97.01315,
+    27.72926
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lower-laguna-madre-port-mansfield-tx",
+   "file": "lower-laguna-madre-port-mansfield-tx.mbtiles",
+   "name": "Lower Laguna Madre (Port Mansfield)",
+   "st": [
+    "TX"
+   ],
+   "lat": 26.62875,
+   "lng": -97.33475,
+   "km": 19.2,
+   "bbox": [
+    -97.54299,
+    26.4426,
+    -97.12651,
+    26.8149
+   ],
+   "minz": 8,
+   "maxz": 15
+  },
+  {
+   "id": "bay:lower-laguna-madre-port-isabel-tx",
+   "file": "lower-laguna-madre-port-isabel-tx.mbtiles",
+   "name": "Lower Laguna Madre (Port Isabel)",
+   "st": [
+    "TX"
+   ],
+   "lat": 26.10727,
+   "lng": -97.15497,
+   "km": 12.7,
+   "bbox": [
+    -97.29717,
+    25.97957,
+    -97.01276,
+    26.23496
+   ],
+   "minz": 8,
+   "maxz": 15
+  }
+ ]
+}
