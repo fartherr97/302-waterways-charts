@@ -2,14 +2,15 @@
 # the whole coast, Maine to Texas, and the Great Lakes, in regions (regions.json: squares about
 # 30–40 km a side), one MBTiles file each, published as a
 # release's files, and the list the app reads (offline-charts.json) as the "catalog" release's
-# file. On the 5th of each month; or by hand: Actions → "Offline charts" → Run workflow (a run
-# by hand can build only some packs: the rest keep their last build).
+# file. By hand: Actions → "Offline charts" → Run workflow (a run by hand can build only some
+# packs: the rest keep their last build). The monthly build (5th of the month) is paused while
+# offline maps isn't in the app; to bring it back, put this under on: again:
+#   schedule:
+#     - cron: '23 6 5 * *'
 # No secrets: NOAA's chart is public domain, and this repository's own token publishes it.
 name: Offline charts
 
 on:
-  schedule:
-    - cron: '23 6 5 * *'
   workflow_dispatch:
     inputs:
       only:
